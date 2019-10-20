@@ -1,0 +1,36 @@
+{
+    "name": "ezadtv/two",
+    "description": "Experimental v2 framework",
+    "require": {
+        "symfony/asset": "^4.3",
+        "symfony/cache": "^4.3",
+        "symfony/console": "^4.3",
+        "symfony/filesystem": "^4.3",
+        "symfony/process": "^4.3",
+        "vlucas/phpdotenv": "^3.6",
+        "symfony/event-dispatcher": "^4.3",
+        "symfony/finder": "^4.3",
+        "symfony/http-foundation": "^4.3",
+        "symfony/inflector": "^4.3",
+        "symfony/options-resolver": "^4.3",
+        "twig/twig": "^2.0",
+        "nikic/fast-route": "^1.3",
+        "monolog/monolog": "^2.0",
+        "nikic/php-parser": "^4.2"
+    },
+    "require-dev": {
+        "pds/skeleton": "^1.0",
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Two\\": "src/"
+        },
+        "files": ["src/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Two\\": "tests/"
+        }
+    }
+}
