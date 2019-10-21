@@ -43,8 +43,8 @@ class ServiceSetCollector extends NodeVisitorAbstract
                     $this->argumentSet[$className] = true;
 
                     // handle automatic aliases.
-                    if ( $node->args[1] instanceof Node\Scalar\String_ ) {
-                        $name = $this->resolveName($node->args[1]);
+                    if ( $node->args[1]->value instanceof Node\Scalar\String_ ) {
+                        $name = $node->args[1]->value->value;
                     } else {
                         $name = '';
                     }
