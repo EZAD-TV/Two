@@ -2,6 +2,8 @@
     "name": "ezadtv/two",
     "description": "Experimental v2 framework",
     "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
         "symfony/asset": "^4.3",
         "symfony/cache": "^4.3",
         "symfony/console": "^4.3",
@@ -16,7 +18,9 @@
         "twig/twig": "^2.0",
         "nikic/fast-route": "^1.3",
         "monolog/monolog": "^2.0",
-        "nikic/php-parser": "^4.2"
+        "nikic/php-parser": "^4.2",
+        "symfony/http-kernel": "^4.3",
+        "respect/validation": "^1.1",
     },
     "require-dev": {
         "pds/skeleton": "^1.0",
